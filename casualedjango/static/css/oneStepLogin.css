@@ -143,6 +143,24 @@
   transition-duration: 0.3s;
 }
 
+/* @media (max-width: 60rem){
+  a{
+    color:black;
+  }
+  h1{
+    color:black;
+  }
+  h2{
+    color:black;
+  }
+  h3{
+    color:black;
+  }
+  p{
+    color:black;
+  }
+} */
+
 @media (max-width: 60rem) {
   * {
     margin: 0px;
@@ -242,6 +260,32 @@
     background-color: none;
     margin: 0rem;
     padding: 0rem;
+  }
+  a{
+    color:black;
+  }
+  h1{
+    color:black;
+  }
+  h2{
+    color:black;
+  }
+  h3{
+    color:black;
+  }
+  p{
+    color:black;
+  }
+  li{
+    color: black;
+  }
+  a{
+    color:black;
+    background-color: #291867;
+    
+  }
+  a:hover{
+    border: 2px black  solid;
   }
 }
 
@@ -437,4 +481,7 @@ header{
 } */
 body{
   background:white;
+}
+.submit-button{
+  color: black;
 }
