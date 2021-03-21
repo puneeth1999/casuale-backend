@@ -1,0 +1,50 @@
+{% load static %}
+<!-- SIGNUP Page -->
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta content="width=device-width, initial-scale=1" name="viewport" />
+    <title>CASUALE - LOGIN</title>
+    <link rel="stylesheet" href="{% static 'css/login.css' %}">
+</head>
+
+<body class="body">
+    <div class="full-screen">
+        <div class="container">
+            <nav class="nav-bar">
+                <img src="{% static 'images/casualeLogo.png' %}" alt="logo" class="logo">
+                <h1 class="h1">CASUALE</h1>
+                <ul class="nav-list">
+                    <li class="li" id = "navlink"> <a href="{% url 'oneStepLogin' %}" class="a-text">HOME</a></li>
+                    <li class="li" id = "navlink"> <a href="{% url 'contactus' %}" class="a-text">CONTACT US</a></li>
+                    <li class="li" id = "navlink"> <a href="{% url 'signup' %}" class="a-text">SIGNUP</a></li>
+                </ul>
+            </nav>
+            <div class="box">
+                <img src="{% static 'images/welcome.png' %}" alt="welcome-picture" class="welimg">
+                <div class="form-div">
+                    <form action="" class="login-form">
+                        <div class='inside-form'>
+                            <div class="error-box">
+                            </div>
+                            <input type="text" class='text-box' id="username" placeholder="Enter your username">
+                            <br>
+                            <input type="password" name="password" id="password" class="text-box" placeholder="Choose a Password">
+                            <br>
+                            <br>
+                            <input type="submit" value="LOGIN" class="login-button">
+                        </div>
+                    </form>
+                    <p class="p_">Forgot your password? <a href="" class="p_a">Reset</a></p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="{% static 'js/login.js' %}"></script>
+</body>
+
+</html>

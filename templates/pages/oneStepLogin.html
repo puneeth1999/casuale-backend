@@ -1,0 +1,84 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CASUALE - LOGIN NOW</title>
+    <link rel="stylesheet" href="{% static 'css/oneStepLogin.css' %}">
+
+</head>
+
+<body>
+    <div class="full-screen">
+        <div class="container">
+            <!-- <nav class="nav-bar">
+                <img src="{% static 'images/casualeLogo.png' %}" alt="logo" class="logo">
+                <h1 class="h1">CASUALE</h1>
+                <ul class="nav-list">
+                    <li class="li"> <a href="{% url 'contactus' %}" class="a-text">CONTACT US</a></li>
+                </ul>
+            </nav> -->
+
+            <header>
+                <nav>
+                    <!-- <img id="nav-logo" src="images/casualeLogo.png" alt=""> -->
+                    <h1 class="logo" style="  font-family: Arial, Helvetica, sans-serif;">CASUALE</h1>
+        
+                    <ul class="menu">
+                        <li><a class="nav-l" href="{% url 'oneStepLogin' %} ">Home</a></li>
+                        <li><a class="nav-l" href="{% url 'contactus' %}">Contact Us</a>
+                        </li>
+                    </ul>
+                </nav>
+            </header>
+        
+
+            <div class="box">
+                <form action="" class="login-form">
+                    <div class='inside-form'>
+                        <div class="error-box">
+                        </div>
+                        <input type="text" class='text-box' id="username" placeholder="Choose your username">
+                        <br>
+                        <input type="submit" value="ENTER" class="submit-button">
+                    </div>
+                </form>
+
+            </div>
+
+            <div class="box-log-sign">
+                <div class="inner-box-log-sign">
+                    <ul class="inner-box-log-sign-ul">
+                        <div class="inner-box-log-sign-ul-inner-div">
+                            <li id="item1">
+                                <p>Wanna keep your history?<br><br>
+                                    <div>
+                                        <a class="a-special" href="{% url 'signup' %}">SIGN UP</a>
+                                    </div>
+                                </p>
+                            </li>
+                        </div>
+                        <div class="inner-box-log-sign-ul-inner-div">
+                            <li id="item2">
+                                <p>Already have an account?<br><br>
+                                    <div>
+                                        <a class="a-special" href="{% url 'login' %}">LOGIN</a>
+                                    </div>
+                                </p>
+                            </li>
+                        </div>
+
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+    </div>
+    <script src="{% static 'js/oneStepLogin.js' %}"></script>
+</body>
+
+</html>
